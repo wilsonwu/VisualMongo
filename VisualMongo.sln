@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualMongo", "VisualMongo\VisualMongo.csproj", "{6C440F2F-9535-4556-8305-FA429981CFE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualMongo.Service", "VisualMongo.Service\VisualMongo.Service.csproj", "{51F3E323-6202-456C-BD58-6ABB89CD5BD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualMongo.Entity", "VisualMongo.Entity\VisualMongo.Entity.csproj", "{228985D7-7469-4281-8CFA-11E1655D444A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C440F2F-9535-4556-8305-FA429981CFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C440F2F-9535-4556-8305-FA429981CFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C440F2F-9535-4556-8305-FA429981CFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C440F2F-9535-4556-8305-FA429981CFE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F3E323-6202-456C-BD58-6ABB89CD5BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F3E323-6202-456C-BD58-6ABB89CD5BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F3E323-6202-456C-BD58-6ABB89CD5BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F3E323-6202-456C-BD58-6ABB89CD5BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{228985D7-7469-4281-8CFA-11E1655D444A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228985D7-7469-4281-8CFA-11E1655D444A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228985D7-7469-4281-8CFA-11E1655D444A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228985D7-7469-4281-8CFA-11E1655D444A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
