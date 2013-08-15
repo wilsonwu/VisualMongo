@@ -24,5 +24,12 @@ namespace VisualMongo.Service
             set { VisualMongoDB._vMongoServer = value; }
         }
 
+        private static MongoDatabase _vMongoDatabase;
+
+        public static MongoDatabase VMongoDatabase
+        {
+            get { return VisualMongoDB._vMongoDatabase; }
+            set { VisualMongoDB._vMongoDatabase = value; }
+        }
     }
 }

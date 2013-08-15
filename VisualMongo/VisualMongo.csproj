@@ -52,34 +52,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connection\Connection.cs">
+    <Compile Include="Connection\ConnectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connection\Connection.Designer.cs">
-      <DependentUpon>Connection.cs</DependentUpon>
+    <Compile Include="Connection\ConnectionForm.Designer.cs">
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Connection\Connections.cs">
+    <Compile Include="Connection\ConnectionsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Connection\Connections.Designer.cs">
-      <DependentUpon>Connections.cs</DependentUpon>
+    <Compile Include="Connection\ConnectionsForm.Designer.cs">
+      <DependentUpon>ConnectionsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Connection\Connection.resx">
-      <DependentUpon>Connection.cs</DependentUpon>
+    <EmbeddedResource Include="Connection\ConnectionForm.resx">
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Connection\Connections.resx">
-      <DependentUpon>Connections.cs</DependentUpon>
+    <EmbeddedResource Include="Connection\ConnectionsForm.resx">
+      <DependentUpon>ConnectionsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,10 +102,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\VisualMongo.Entity\VisualMongo.Entity.csproj">
+      <Project>{228985d7-7469-4281-8cfa-11e1655d444a}</Project>
+      <Name>VisualMongo.Entity</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VisualMongo.Service\VisualMongo.Service.csproj">
       <Project>{51f3e323-6202-456c-bd58-6abb89cd5bd8}</Project>
       <Name>VisualMongo.Service</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Icons\database.png" />
+    <Content Include="Resources\Icons\server.png" />
+    <Content Include="Resources\Icons\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

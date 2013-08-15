@@ -8,17 +8,17 @@ namespace VisualMongo.Service
 {
     public class ServerService
     {
-        public static bool GetServer()
+        public static string GetServer()
         {
-            bool result = false;
+            string result = string.Empty;
             try
             {
                 VisualMongoDB.VMongoServer = VisualMongoDB.VMongoClient.GetServer();
-                result = true;
+                result = VisualMongoDB.VMongoServer.Instance.Address.Host;
             }
             catch (Exception ex)
             {
-                result = false;
+                result = string.Empty;
             }
             return result;
         }

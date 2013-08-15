@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualMongo.Service", "Visu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualMongo.Entity", "VisualMongo.Entity\VisualMongo.Entity.csproj", "{228985D7-7469-4281-8CFA-11E1655D444A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualMongo.Test", "VisualMongo.Test\VisualMongo.Test.csproj", "{54FCEB46-1398-4F9D-8AE9-457FCA62742C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{228985D7-7469-4281-8CFA-11E1655D444A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{228985D7-7469-4281-8CFA-11E1655D444A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{228985D7-7469-4281-8CFA-11E1655D444A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54FCEB46-1398-4F9D-8AE9-457FCA62742C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54FCEB46-1398-4F9D-8AE9-457FCA62742C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54FCEB46-1398-4F9D-8AE9-457FCA62742C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54FCEB46-1398-4F9D-8AE9-457FCA62742C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

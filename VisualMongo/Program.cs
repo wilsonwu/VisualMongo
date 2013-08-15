@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace VisualMongo
 {
-    static class Program
+    public static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -15,7 +15,7 @@ namespace VisualMongo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new MainForm());
         }
     }
 }
