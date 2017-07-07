@@ -14,6 +14,7 @@ namespace VisualMongo.Service
     {
         public static string appDataFolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "VisualMongo");
         public static string appDataFilePath = Path.Combine(appDataFolderPath, "VisualMongo.xml");
+       
 
         public static bool InitConfigurationFile(bool isOverWrite = false)
         {
@@ -40,7 +41,7 @@ namespace VisualMongo.Service
                 //Create appdata file.
                 try
                 {
-                    if (Directory.Exists(appDataFolderPath) == true)
+                    if (Directory.Exists(appDataFolderPath) == false)
                     {
                         Directory.CreateDirectory(appDataFolderPath);
                     }
@@ -226,6 +227,7 @@ namespace VisualMongo.Service
 
         public static List<ConnectionEntity> GetAllConnections()
         {
+            InitConfigurationFile();
             List<ConnectionEntity> result = new List<ConnectionEntity>();
             XDocument document = XDocument.Load(appDataFilePath);
             var getElements = document.Root.Element("Connections").Elements();
