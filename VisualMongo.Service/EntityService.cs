@@ -34,7 +34,7 @@ namespace VisualMongo.Service
             {
                 foreach (var column in table.Columns)
                 {
-                    BsonElement tempBson = null;
+                    BsonElement tempBson = new BsonElement();
                     bsons[j].TryGetElement(column.ToString(), out tempBson);
                     if (tempBson != null)
                     {
