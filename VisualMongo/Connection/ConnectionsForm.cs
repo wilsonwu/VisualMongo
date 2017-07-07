@@ -56,6 +56,7 @@ namespace VisualMongo.Connection
             if (lvConnections.SelectedItems.Count > 0)
             {
                 VisualMongo.Service.ConnectionService.DeleteConnection(lvConnections.SelectedItems[0].Text);
+                BindConnections();
             }
         }
 
